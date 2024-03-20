@@ -53,7 +53,7 @@ const TicketStatusChangedEmail = () => {
 							If you wish to change the status of your ticket then please visit our help desk and update the status from the ticket dashboard.
 						</Text>
             <Text className={pClass}>
-							You are receiving this email because you have created a ticket in our support help desk. If you wish not to receive any ticket email updates then please update your communication preference from help desk dashboard {" > "} 
+							You are receiving this email because you have created a ticket in our support help desk. If you wish not to receive any ticket email updates then please update your communication preference from help desk dashboard {" > "}
 							<Link href="https://help.creamcode.org/dashboard/tickets/create/" className={linkClass}>
 								 profile settings.
 							</Link>

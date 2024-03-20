@@ -15,7 +15,7 @@ import {
 import Header from "../components/header";
 import Footer from "../components/footer";
 
-const TicketStatusChangedEmail = () => {
+const ResetEmail = () => {
   return (
 		<Tailwind
 		config={{
@@ -62,7 +62,7 @@ const TicketStatusChangedEmail = () => {
   );
 };
 
-export default TicketStatusChangedEmail;
+export default ResetEmail;
 
 const htmlClass = "relative m-0 p-0 font-sans font-normal text-base w-full overflow-hidden bg-gray-100 mx-auto box-border";
 

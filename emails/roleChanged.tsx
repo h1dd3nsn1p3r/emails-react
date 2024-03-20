@@ -4,16 +4,16 @@ import {
 	Tailwind,
 	Container,
 	Head,
+	Link,
 	Html,
 	Preview,
 	Section,
 	Text,
-	Link,
 } from "@react-email/components";
 import Header from "../components/header";
 import Footer from "../components/footer";
 
-const EmailUpdated = () => {
+const RoleChanged = () => {
   return (
 		<Tailwind
 		config={{
@@ -26,10 +26,10 @@ const EmailUpdated = () => {
 		>
 			<Html className={htmlClass}>
 			<Head>
-				<title>Email has been updated.</title>
+				<title>Role changed.</title>
 			</Head>
 			<Preview>
-				Email has been updated.
+				This is an automated email to let you that your role has been changed.
 			</Preview>
 			<Body className={bodyClass}>
 				<Container className={containerClass}>
@@ -39,14 +39,13 @@ const EmailUpdated = () => {
 							Dear Customer,
 						</Text>
 						<Text className={pClass}>
-							This is an automated email to let you know that your email has been updated. If you did not request this change, please contact us immediately.
+							This is an automated email to let you that your role at { " " }
+							<Link href="https://creamcode.org" className={linkClass}>
+								Cream Code Help Desk
+							</Link> has been changed been changed to <strong>Customer</strong>.
 						</Text>
             <Text className={pClass}>
-							Further more no action is required from your side. You can {" "}
-							<Link href="https://creamcode.org/login" className={linkClass}>
-								login
-							</Link>
-							{" "} with the new email address to access your account.
+							You are receiving this email because you are a registered user at our help desk. Further more no action is required from your side.
 						</Text>
 						<Text className={pClass}>
 							Best regards,<br />
@@ -61,7 +60,7 @@ const EmailUpdated = () => {
   );
 };
 
-export default EmailUpdated;
+export default RoleChanged;
 
 const htmlClass = "relative m-0 p-0 font-sans font-normal text-base w-full overflow-hidden bg-gray-100 mx-auto box-border";
 
